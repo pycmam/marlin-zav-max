@@ -244,7 +244,7 @@ void GcodeSuite::G28() {
     #if ENABLED(RESTORE_LEVELING_AFTER_G28)
       const bool leveling_was_active = planner.leveling_active;
     #endif
-    set_bed_leveling_enabled(false);
+    set_bed_leveling_enabled(true);
   #endif
 
   #if ENABLED(CNC_WORKSPACE_PLANES)
